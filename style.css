@@ -69,6 +69,10 @@ body {
 	width: 100%;
 }
 
+.mediumScreen {
+	display: none;
+}
+
 /*===============================================================================================
                                             Header
 ================================================================================================*/
@@ -119,6 +123,11 @@ body {
 	position: absolute;
 	bottom: -4px;
 	left: 20px;
+}
+
+#close,
+#sideNav {
+	display: none;
 }
 
 /*===============================================================================================
@@ -531,7 +540,7 @@ body {
 }
 
 /*===============================================================================================
-                                            Footer
+                                            FOOTER
 ================================================================================================*/
 .footer {
 	padding: 40px 80px;
@@ -607,4 +616,109 @@ body {
 	display: flex;
 	justify-content: center;
 	font-size: 20px;
+}
+
+/*===============================================================================================
+                                            MEDIA QUERIES
+================================================================================================*/
+
+@media (max-width: 1025px) {
+	#navbar {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		position: fixed;
+		top: 0;
+		right: -300px;
+		height: 100vh;
+		width: 300px;
+		background-color: #e3e6f3;
+		box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+		padding: 80px 0 0 10px;
+	}
+
+	#navbar.active {
+		right: 0;
+	}
+
+	#navbar li {
+		margin-bottom: 25px;
+	}
+
+	#navbar li a {
+		font-size: 18px;
+	}
+
+	#sideNav {
+		display: flex;
+		align-items: center;
+	}
+
+	#sideNav i {
+		color: black;
+		font-size: 24px;
+		padding-left: 20px;
+	}
+
+	#hamburgerIcon {
+		cursor: pointer;
+	}
+
+	#close {
+		display: initial;
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		color: #222;
+		font-size: 24px;
+	}
+
+	#lg-bag {
+		display: none;
+	}
+
+	#hero {
+		height: 70vh;
+		padding: 0 80px;
+		background-position: top 30% right 30%;
+	}
+
+	#feature {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin: auto;
+		justify-items: center;
+	}
+
+	#featuredProducts .featuredContainer,
+	#newProducts .featuredContainer {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin: auto;
+		justify-items: center;
+	}
+
+	#featuredProducts .productCard,
+	#newProducts .productCard {
+		width: 90%;
+	}
+
+	#banner {
+		height: 25vh;
+	}
+
+	#sm-banner .bannerBox {
+		min-width: 50%;
+		height: 30vh;
+	}
+
+	.footer {
+		padding: 40px 60px 30px 60px;
+	}
+
+	.footer .footerColumn {
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr 1.5fr;
+	}
 }
