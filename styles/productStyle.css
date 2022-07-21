@@ -1,0 +1,68 @@
+/*===============================================================================================
+                                            Product container
+================================================================================================*/
+#productContainer {
+	padding: 40px 80px;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	column-gap: 30px;
+}
+
+.smallImgRow {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	column-gap: 10px;
+	cursor: pointer;
+}
+
+.productRight {
+	padding-top: 30px;
+}
+
+.productRight h4 {
+	padding: 40px 0 20px 0;
+}
+
+.productRight h2 {
+	font-size: 26px;
+}
+
+.productRight select {
+	display: block;
+	padding: 5px 10px;
+	margin-bottom: 15px;
+	height: 30px;
+}
+
+.productRight input {
+	padding: 5px 5px 5px 10px;
+	width: 55px;
+	height: 47px;
+	font-size: 16px;
+}
+
+.productRight select:focus,
+.productRight input:focus {
+	outline: none;
+}
+
+.productRight button {
+	height: 47px;
+	margin-left: 10px;
+	padding: 5px 10px;
+	background: #088178;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.productRight button i {
+	padding-left: 8px;
+}
+
+.productRight p {
+	line-height: 25px;
+}
