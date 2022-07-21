@@ -43,11 +43,12 @@
 						alt="product"
 						width="100%"
 						class="largeImg"
+						id="mainImg"
 					/>
 				</div>
 
 				<div class="smallImgRow">
-					<div class="smallImg">
+					<div>
 						<img
 							src="../img/products/f1.jpg"
 							alt="product"
@@ -55,7 +56,7 @@
 							class="smallImg"
 						/>
 					</div>
-					<div class="smallImg">
+					<div>
 						<img
 							src="../img/products/f2.jpg"
 							alt="product"
@@ -63,7 +64,7 @@
 							class="smallImg"
 						/>
 					</div>
-					<div class="smallImg">
+					<div>
 						<img
 							src="../img/products/f3.jpg"
 							alt="product"
@@ -71,7 +72,7 @@
 							class="smallImg"
 						/>
 					</div>
-					<div class="smallImg">
+					<div>
 						<img
 							src="../img/products/f4.jpg"
 							alt="product"
@@ -272,6 +273,24 @@
 				<p>© 2022, J - Fashion</p>
 			</div>
 		</footer>
+
+		<script>
+			var mainImg = document.getElementById("mainImg");
+			var smallImg = document.getElementsByClassName("smallImg");
+
+			smallImg[0].onclick = function () {
+				mainImg.src = smallImg[0].src;
+			};
+			smallImg[1].onclick = function () {
+				mainImg.src = smallImg[1].src;
+			};
+			smallImg[2].onclick = function () {
+				mainImg.src = smallImg[2].src;
+			};
+			smallImg[3].onclick = function () {
+				mainImg.src = smallImg[3].src;
+			};
+		</script>
 
 		<script src="script.js"></script>
 	</body>
