@@ -155,7 +155,7 @@ body {
 }
 
 #hero button {
-	background-image: url("img/button.png");
+	background-image: url("../img/button.png");
 	background-color: transparent;
 	color: #088178;
 	border: 0;
@@ -352,7 +352,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-image: url("img/banner/b2.jpg");
+	background-image: url("../img/banner/b2.jpg");
 	width: 100%;
 	height: 40vh;
 	background-size: cover;
@@ -402,7 +402,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	background-image: url("img/banner/b17.jpg");
+	background-image: url("../img/banner/b17.jpg");
 	min-width: 580px;
 	height: 50vh;
 	max-height: 400px;
@@ -412,7 +412,7 @@ body {
 }
 
 #sm-banner .bannerBox:nth-child(2) {
-	background-image: url("img/banner/b10.jpg");
+	background-image: url("../img/banner/b10.jpg");
 }
 
 #sm-banner h4 {
@@ -446,7 +446,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	background-image: url("img/banner/b7.jpg");
+	background-image: url("../img/banner/b7.jpg");
 	min-width: 30%;
 	height: 30vh;
 	max-height: 200px;
@@ -457,11 +457,11 @@ body {
 }
 
 #xs-banner .bannerBoxSmall:nth-child(2) {
-	background-image: url("img/banner/b4.jpg");
+	background-image: url("../img/banner/b4.jpg");
 }
 
 #xs-banner .bannerBoxSmall:nth-child(3) {
-	background-image: url("img/banner/b18.jpg");
+	background-image: url("../img/banner/b18.jpg");
 }
 
 #xs-banner h2 {
@@ -480,7 +480,7 @@ body {
                                             Newsletter
 ================================================================================================*/
 #newsletter {
-	background-image: url("img/banner/b14.png");
+	background-image: url("../img/banner/b14.png");
 	background-repeat: no-repeat;
 	background-position: 20% 30%;
 	background-color: #041e42;
@@ -594,7 +594,7 @@ body {
 	cursor: pointer;
 }
 
-.footer .footerApp img {
+.footer .footerApp .appstoreImg img {
 	border: 1px solid #088178;
 	border-radius: 6px;
 }
