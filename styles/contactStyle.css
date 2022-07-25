@@ -1,0 +1,168 @@
+/*===============================================================================================
+                                            Contact container
+================================================================================================*/
+#contact-header {
+	background-image: url("../img/about/banner.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 40vh;
+	max-height: 400px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+}
+
+#contact-header h2,
+#contact-header p {
+	color: #fff;
+}
+
+#contactContainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 40px 20px;
+	margin: auto;
+	max-width: 1600px;
+}
+
+.contactLeft {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.contactLeft span {
+	font-size: 12px;
+}
+
+.contactLeft h2 {
+	font-size: 26px;
+	line-height: 35px;
+	padding: 20px 0;
+}
+
+.contactLeft h3 {
+	font-size: 16px;
+	padding-bottom: 15px;
+}
+
+.contactLeft div > li {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	margin: 20px 0;
+}
+
+.contactLeft div > li > i {
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.contactLeft div > li > p {
+	margin: 0;
+}
+
+.contactRight {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*===============================================================================================
+                                            Contact Form
+================================================================================================*/
+#contactForm {
+	display: flex;
+	flex-direction: row;
+	padding: 30px;
+	margin: auto;
+	max-width: 1600px;
+	justify-content: space-evenly;
+}
+
+.contactFormLeft form {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.contactFormLeft form h2 {
+	margin-bottom: 20px;
+}
+
+.contactFormLeft form input,
+.contactFormLeft form textarea,
+.contactFormLeft form button {
+	padding: 12px 15px;
+	outline: none;
+	border: 1px solid #e1e1e1;
+	margin-bottom: 20px;
+}
+
+.contactFormLeft form button {
+	background-color: #088178;
+	color: #fff;
+	width: 30%;
+	border-radius: 20px;
+	float: right;
+}
+
+.contactFormRight div {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 20px;
+}
+
+.contactFormRight div > img {
+	padding-right: 20px;
+	object-fit: contain;
+}
+
+.contactFormRight div > p {
+	line-height: 30px;
+}
+
+/*===============================================================================================
+                                            Media queries
+================================================================================================*/
+@media (max-width: 1025px) {
+	#contactContainer {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	.contactLeft {
+		margin-left: 110px;
+	}
+
+	.contactFormLeft {
+		width: 50vw;
+	}
+}
+
+@media (max-width: 450px) {
+	#contactContainer {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	.contactLeft {
+		margin: 10px 0;
+	}
+
+	.contactRight iframe {
+		width: 90vw;
+		height: 40vh;
+	}
+
+	#contactForm {
+		flex-direction: column;
+	}
+
+	.contactFormLeft {
+		width: 90vw;
+	}
+}
